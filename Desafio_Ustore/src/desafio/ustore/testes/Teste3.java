@@ -10,14 +10,14 @@ public class Teste3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
+//		RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
 		
-		Usuario usuario = repositorioUsuario.obterPorId(3);
-		usuario.setNome("Penélope Loponte");
+//		Usuario usuario = repositorioUsuario.obterPorId(3);
+//		usuario.setNome("Penélope Loponte");
 		
-		repositorioUsuario.salvar(usuario);
+//		repositorioUsuario.salvar(usuario);
 		
-		System.out.println(usuario.getNome());
+//		System.out.println(usuario.getNome());
 	}
 
 }

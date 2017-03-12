@@ -22,7 +22,7 @@ public class Usuario {
 	@Column
 	private String senha;
 	@Column
-	private int telefone;
+	private String telefone;
 	@Column
 	private String email;
 	@Column
@@ -54,10 +54,10 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 	public Date getCreated() {
