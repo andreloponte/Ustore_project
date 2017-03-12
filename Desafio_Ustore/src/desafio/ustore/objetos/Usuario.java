@@ -1,5 +1,8 @@
 package desafio.ustore.objetos;
 
+import java.sql.Time;
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,6 +25,10 @@ public class Usuario {
 	private int telefone;
 	@Column
 	private String email;
+	@Column
+	private Date created;
+	@Column
+	private Date modified;
 	
 	public int getId() {
 		return id;
@@ -35,6 +42,12 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	public String getSenha() {
 		return senha;
 	}
@@ -47,10 +60,16 @@ public class Usuario {
 	public void setTelefone(int telefone) {
 		this.telefone = telefone;
 	}
-	public String getEmail() {
-		return email;
+	public Date getCreated() {
+		return created;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setCreated(Date created) {
+		this.created = new Date();
+	}
+	public Date getModified() {
+		return modified;
+	}
+	public void setModified(Date modified) {
+		this.modified = new Date();
 	}
 }

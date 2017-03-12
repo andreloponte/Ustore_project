@@ -1,0 +1,23 @@
+package desafio.ustore.testes;
+
+import java.util.Iterator;
+import java.util.List;
+
+import desafio.ustore.objetos.Usuario;
+import desafio.ustore.repositorio.RepositorioUsuario;
+
+public class Teste3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
+		
+		Usuario usuario = repositorioUsuario.obterPorId(3);
+		usuario.setNome("Penélope Loponte");
+		
+		System.out.println(usuario.getNome());
+			
+		}
+	}
+
+}

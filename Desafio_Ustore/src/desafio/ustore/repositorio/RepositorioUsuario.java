@@ -18,7 +18,15 @@ public class RepositorioUsuario {
 		emf = Persistence.createEntityManagerFactory("desafio");
 		em = emf.createEntityManager();
 	}
-
+	
+	public Usuario obterPorId(int id){
+		em.getTransaction().begin();
+		Usuario usuario = em.find(Usuario.class, id);		
+		em.getTransaction().commit();
+		emf.close();
+		return usuario;
+	}
+	
 	public void salvar(Usuario usuario){
 		em.getTransaction().begin();
 		em.merge(usuario);		

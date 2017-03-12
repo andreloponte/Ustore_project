@@ -10,13 +10,13 @@ public class Teste2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
-		List<Usuario> usuarios = repositorioUsuario.listarTodos();
+//		RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
+//		List<Usuario> usuarios = repositorioUsuario.listarTodos();
 		
-		for (Usuario usuario : usuarios) {
-			System.out.println(usuario.getNome());
+//		for (Usuario usuario : usuarios) {
+//			System.out.println(usuario.getNome());
 			
-		}
+//		}
 	}
 
 }
