@@ -1,0 +1,21 @@
+package desafio.ustore.repositorio;
+
+import java.util.List;
+
+import desafio.ustore.objetos.Usuario;
+
+public class RepositorioUsuario {
+
+	public void salvar(Usuario usuario){
+		
+	}
+	
+	public void remover(Usuario usuario){
+		
+	}
+	
+	public List<Usuario> listarTodos(){
+		return null;
+	}
+	
+}

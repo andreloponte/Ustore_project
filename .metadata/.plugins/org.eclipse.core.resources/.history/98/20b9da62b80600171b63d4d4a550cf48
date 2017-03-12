@@ -1,0 +1,20 @@
+package desafio.ustore.testes;
+
+import desafio.ustore.objetos.Usuario;
+import desafio.ustore.repositorio.RepositorioUsuario;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		RepositorioUsuario repositorioUsuario = new RepositorioUsuario();
+		Usuario usuario = new Usuario();
+		usuario.setNome("André");
+		usuario.setSenha("loponte");
+		usuario.setEmail("aabrl@aabrl.com");
+		usuario.setTelefone(987654321);
+		
+		repositorioUsuario.salvar(usuario);
+	}
+
+}
