@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmls="http://java.sun.com/jsf/html"
+	xmls="http://java.sun.com/jsf/core">
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <title>Cadastro de Usuarios</title>
+  </head>
+  <body>
+  	<h1>Cadastro de Usuarios</h1>
+  	
+  	<form>
+  		<h:panelGrid columns="2">
+  			<outputLabel value="nome"/>
+  			<inputText value="#{RepositorioUsuario.usuario.nome}"/>
+  			
+  			<commandButton value="Salvar" action="#{RepositorioUsuario.salvar(Usuario.usuario)}"/>
+  		</panelGrid>
+  	</form>
+  </body>
+</html>
